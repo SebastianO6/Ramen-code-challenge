@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.title {
+    background: rgb(0, 0, 0);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+ 
+#ramen-menu img {
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#ramen-detail img {
+    width: 200px;   
+}
+
+.newramen {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 200px;
+}
+
+#ramen-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#ramen-form label {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: center;
+  }
+
+  #submit {
+    width: 180px;
+    background-color: black;
+    color: white;
+  }
+
+  #rating {
+    width: 180px;
+  }
