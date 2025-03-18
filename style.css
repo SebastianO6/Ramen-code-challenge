@@ -1,53 +1,108 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-image: url("Images/shawn-nmpW_WwwVSc-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title {
-    background: rgb(0, 0, 0);
-    text-align: center;
-    color: rgb(255, 255, 255);
+    background: black;
+    color: white;
 }
 
- 
+#ramen-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+}
+
 #ramen-menu img {
-    width: 200px;
+    width: 150px;
+    height: auto;
     margin: 10px;
     cursor: pointer;
+    border-radius: 50%;
+ 
+}
+
+#ramen-menu img:hover {
+    transform: scale(1.1);
+}
+
+#ramen-detail {
+    margin: 20px auto;
+    padding: 10px;
+    width: 50%;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 #ramen-detail img {
-    width: 200px;   
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
 }
 
 .newramen {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
     background-color: black;
     color: white;
-    width: 200px;
+    width: fit-content;
+    border-radius: 5px;
 }
 
 #ramen-form {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.forms {
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 #ramen-form label {
-    display: flex;
+    display: block;
+    font-weight: bold;
+    text-align: left;
     margin-bottom: 5px;
-    justify-content: center;
-  }
+}
 
-  #submit {
-    width: 180px;
+#ramen-form input, 
+#ramen-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submit {
+    width: 100%;
+    padding: 10px;
     background-color: black;
     color: white;
-  }
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
-  #rating {
-    width: 180px;
-  }
+#submit:hover {
+    background-color: darkgray;
+}
